@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Majda Ablaoui — Ingénieure Logiciel · Full-Stack & IA</title>
+  <meta name="description" content="Majda Ablaoui, ingénieure logiciel full-stack & IA : Java / Spring Boot, Python, Angular, React, LLM et agents IA, microservices, cloud." />
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+  <meta property="og:title" content="Majda Ablaoui — Ingénieure Logiciel · Full-Stack & IA" />
+  <meta property="og:description" content="Java / Spring Boot · Python · Angular · React · LLM & agents IA · Microservices" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme/lang before first paint (no flash).
+    (function () {
+      var d = document.documentElement, t = localStorage.getItem("theme");
+      d.dataset.theme = t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (localStorage.getItem("lang") === "en") d.lang = "en";
+      d.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Majda Ablaoui">
+        <span class="brand-mark">MA</span>
+        <span class="brand-name">Majda Ablaoui</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation">
+        <a href="#experience" data-i18n="nav.exp">Expérience</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="#certifications" data-i18n="nav.certs">Certifications</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Langue / Language">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <span class="seg-pill" aria-hidden="true"></span>
+        </div>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Thème clair / sombre">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"><div class="grid"></div><div class="glow g1"></div><div class="glow g2"></div></div>
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="status" data-anim="1"><span class="dot"></span><span data-i18n="hero.status">Disponible — ouverte aux opportunités</span></p>
+          <h1 data-anim="2">
+            <span data-i18n="hero.hello">Ingénieure logiciel.</span><br />
+            <span class="muted" data-i18n="hero.build">Je construis des</span>
+            <span class="rotator" aria-live="polite">
+              <span class="rot-word is-active" data-i18n="hero.w1">plateformes SaaS</span>
+              <span class="rot-word" data-i18n="hero.w2">agents IA</span>
+              <span class="rot-word" data-i18n="hero.w3">API sécurisées</span>
+              <span class="rot-word" data-i18n="hero.w4">microservices</span>
+            </span>
+          </h1>
+          <p class="lead" data-anim="3" data-i18n="hero.lead">Ingénieure informatique spécialisée en développement logiciel, avec de solides compétences en Java / Spring Boot, API REST et bases de données relationnelles. Expérience dans la conception d'applications sécurisées et maintenables, avec une attention portée à la qualité du code et aux bonnes pratiques d'architecture.</p>
+          <div class="cta-row" data-anim="4">
+            <a class="btn btn-primary" href="#projects"><span data-i18n="hero.cta1">Voir mes projets</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn" id="cv-link" href="assets/CV_Majda_Ablaoui_FR.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="hero.cta2">Télécharger le CV</span></a>
+          </div>
+          <ul class="socials" data-anim="5">
+            <li><a href="https://github.com/majda2001" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/majda-ablaoui" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+            <li><a href="mailto:ablaoui.majda2001@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></li>
+            <li class="loc mono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Rabat, Maroc</li>
+          </ul>
+        </div>
+
+        <!-- Code card -->
+        <div class="code-card" data-anim="3" aria-hidden="true">
+          <div class="code-bar"><span></span><span></span><span></span><em class="mono">engineer.ts</em></div>
+          <pre class="mono"><code><span class="ln"><i class="k">const</i> <i class="v">engineer</i> = {</span>
+<span class="ln">  name: <i class="s">"Majda Ablaoui"</i>,</span>
+<span class="ln">  role: <i class="s" data-i18n="code.role">"Ingénieure Logiciel"</i>,</span>
+<span class="ln">  degree: <i class="s">"ENSMR · Informatique"</i>,</span>
+<span class="ln">  backend: [<i class="s">"Java"</i>, <i class="s">"Spring Boot"</i>, <i class="s">"Python"</i>],</span>
+<span class="ln">  frontend: [<i class="s">"Angular"</i>, <i class="s">"React"</i>, <i class="s">"Next.js"</i>],</span>
+<span class="ln">  ai: [<i class="s">"RAG"</i>, <i class="s">"Agents"</i>, <i class="s">"LLM"</i>],</span>
+<span class="ln">  certified: <i class="n">3</i>, <i class="c">// Oracle</i></span>
+<span class="ln">  available: <i class="k">true</i>,</span>
+<span class="ln">};<b class="caret"></b></span></code></pre>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats" data-reveal>
+          <div><dt data-i18n="st.1">Stages en entreprise</dt><dd><span data-count="4">0</span></dd></div>
+          <div><dt data-i18n="st.2">Certifications Oracle</dt><dd><span data-count="3">0</span></dd></div>
+          <div><dt data-i18n="st.3">Projets livrés</dt><dd><span data-count="7">0</span>+</dd></div>
+          <div><dt data-i18n="st.4">Diplôme d'ingénieur</dt><dd><span data-count="2026" data-fast>2026</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="kicker mono">01 — <span data-i18n="nav.exp">Expérience</span></span>
+          <h2 data-i18n="exp.title">Parcours professionnel</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item" data-reveal>
+            <div class="tl-date mono">03 — 09 / 2026</div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3 data-i18n="e1.role">Ingénieure Full-Stack &amp; IA</h3>
+                  <p class="tl-org">OCP Solutions <span class="muted">· Casablanca</span></p>
+                </div>
+                <span class="label mono" data-i18n="tag.intern">Stage</span>
+              </div>
+              <ul class="ticks">
+                <li data-i18n="e1.1">Refonte d'un MVP mono-client en une <strong>plateforme SaaS B2B multi-tenant</strong> de pricing augmentée par l'IA.</li>
+                <li data-i18n="e1.2">Développement de services backend et d'un <strong>pipeline de traitement de données</strong> alimentant un modèle de pricing et restituant ses résultats pour analyse.</li>
+                <li data-i18n="e1.3">Intégration de <strong>LLM et d'agents IA</strong> multi-providers et multi-frameworks, dont un mode <strong>BYOK</strong> (Bring Your Own Key).</li>
+                <li data-i18n="e1.4">Développement selon les principes SOLID et DRY, avec une attention portée à la sécurité et à la maintenabilité.</li>
+              </ul>
+              <ul class="stack mono"><li>Python</li><li>Flask</li><li>Next.js</li><li>React</li><li>TypeScript</li><li>Agno</li><li>CrewAI</li><li>Celery</li><li>Redis</li><li>MySQL</li><li>MinIO</li><li>Docker</li></ul>
+            </div>
+          </li>
+
+          <li class="tl-item" data-reveal>
+            <div class="tl-date mono">07 — 09 / 2025</div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3 data-i18n="e2.role">Ingénieure Full-Stack</h3>
+                  <p class="tl-org">TalentMind <span class="muted">· Rabat</span></p>
+                </div>
+                <span class="label mono" data-i18n="tag.intern">Stage</span>
+              </div>
+              <ul class="ticks">
+                <li data-i18n="e2.1">Conception et développement d'une <strong>plateforme de recrutement assistée par IA</strong> pour le matching candidats – offres.</li>
+                <li data-i18n="e2.2">Développement et intégration d'API REST et de services tiers, documentés avec Swagger.</li>
+                <li data-i18n="e2.3">Sécurisation de l'application avec <strong>Spring Security, OAuth 2.0 et JWT</strong>.</li>
+              </ul>
+              <ul class="stack mono"><li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>OAuth 2.0</li><li>JWT</li><li>Angular</li><li>Python</li><li>FastAPI</li><li>Swagger</li></ul>
+            </div>
+          </li>
+
+          <li class="tl-item" data-reveal>
+            <div class="tl-date mono">02 — 06 / 2024</div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3 data-i18n="e3.role">Consultante Sécurité Cloud</h3>
+                  <p class="tl-org">CBI <span class="muted">· Casablanca</span></p>
+                </div>
+                <span class="label mono" data-i18n="tag.intern">Stage</span>
+              </div>
+              <ul class="ticks">
+                <li data-i18n="e3.1">Analyse et renforcement de la <strong>posture de sécurité des identités</strong> dans un environnement Microsoft Entra.</li>
+                <li data-i18n="e3.2">Configuration de mécanismes IAM, de politiques de sécurité et de réponse aux incidents.</li>
+              </ul>
+              <ul class="stack mono"><li>Microsoft Entra ID</li><li>Entra Connect</li><li>Cloud Sync</li><li>IAM</li><li>ID Governance</li><li>Defender for Cloud Apps</li></ul>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-date mono">04 — 06 / 2022</div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3 data-i18n="e4.role">Développeuse Full-Stack</h3>
+                  <p class="tl-org">Super Sales Manager <span class="muted">· Casablanca</span></p>
+                </div>
+                <span class="label mono" data-i18n="tag.intern">Stage</span>
+              </div>
+              <ul class="ticks">
+                <li data-i18n="e4.1">Optimisation du portfolio d'un <strong>SaaS visant à optimiser les services de livraison</strong>.</li>
+                <li data-i18n="e4.2">Développement d'un <strong>espace administrateur</strong> permettant la gestion des utilisateurs, des rôles et des autorisations, des sociétés de livraison et la validation des demandes de création des comptes.</li>
+              </ul>
+              <ul class="stack mono"><li>Laravel</li><li>Vue.js</li><li>Nuxt.js</li><li>Tailwind CSS</li><li>MySQL</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="kicker mono">02 — <span data-i18n="nav.projects">Projets</span></span>
+          <h2 data-i18n="pj.title">Projets sélectionnés</h2>
+          <p class="section-sub" data-i18n="pj.sub">Une sélection de réalisations : contexte, contributions et technologies.</p>
+        </header>
+
+        <div class="projects">
+          <article class="project" data-reveal>
+            <header class="project-top">
+              <span class="project-num mono">01</span>
+              <span class="project-domain mono" data-i18n="pr.pricing.domain">SaaS B2B · IA</span>
+              <span class="project-status"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="pr.conf">Confidentiel</span></span>
+            </header>
+            <h3 data-i18n="pr.pricing.title">Plateforme de pricing augmentée par l'IA</h3>
+            <p class="project-lead" data-i18n="pr.pricing.lead">Plateforme de pricing intégrant des capacités d'IA, l'analyse de marché et la simulation de scénarios.</p>
+            <ul class="ticks">
+              <li data-i18n="pr.pricing.b1">Refonte d'un MVP mono-client en plateforme SaaS B2B multi-tenant.</li>
+              <li data-i18n="pr.pricing.b2">Pipeline de traitement de données préparant les entrées du modèle de pricing et restituant ses résultats.</li>
+              <li data-i18n="pr.pricing.b3">Intégration de LLM et d'agents IA multi-providers, avec mode BYOK.</li>
+              <li data-i18n="pr.pricing.b4">Conception UI/UX, logo et identité visuelle, puis implémentation des interfaces.</li>
+            </ul>
+            <ul class="stack mono" aria-label="Stack"><li>Python</li><li>Flask</li><li>Next.js</li><li>React</li><li>TypeScript</li><li>Agno</li><li>CrewAI</li><li>Celery</li><li>Redis</li><li>MySQL</li><li>MinIO</li><li>Docker</li></ul>
+            <footer class="project-foot">
+              <span class="project-ctx" data-i18n="pr.pricing.ctx">OCP Solutions · Stage</span>
+              <span class="project-links"></span>
+            </footer>
+          </article>
+          <article class="project" data-reveal>
+            <header class="project-top">
+              <span class="project-num mono">02</span>
+              <span class="project-domain mono" data-i18n="pr.matching.domain">IA · Microservices</span>
+              
+            </header>
+            <h3 data-i18n="pr.matching.title">Plateforme de matching CV – Offre</h3>
+            <p class="project-lead" data-i18n="pr.matching.lead">Moteur de matching intelligent entre CV et offres d'emploi, au sein d'une architecture microservices.</p>
+            <ul class="ticks">
+              <li data-i18n="pr.matching.b1">Développement de services backend Java / Python.</li>
+              <li data-i18n="pr.matching.b2">Mise en place d'un pipeline CI/CD avec conteneurisation Docker.</li>
+            </ul>
+            <ul class="stack mono" aria-label="Stack"><li>Java</li><li>Spring Boot</li><li>Spring AI</li><li>Angular</li><li>Python</li><li>FastAPI</li><li>Ollama</li><li>LlamaExtract</li><li>Gemini API</li><li>GitHub Actions</li><li>Docker</li></ul>
+            <footer class="project-foot">
+              <span class="project-ctx" data-i18n="pr.matching.ctx">Projet académique</span>
+              <span class="project-links"><a class="link-arrow" href="https://github.com/majda2001/matching-platform" target="_blank" rel="noopener"><span data-i18n="pr.lnk.code">Code source</span> ↗</a></span>
+            </footer>
+          </article>
+          <article class="project" data-reveal>
+            <header class="project-top">
+              <span class="project-num mono">03</span>
+              <span class="project-domain mono" data-i18n="pr.finance.domain">IA · RAG</span>
+              
+            </header>
+            <h3 data-i18n="pr.finance.title">Financial Knowledge &amp; Analysis Platform</h3>
+            <p class="project-lead" data-i18n="pr.finance.lead">Plateforme pour centraliser, rechercher et analyser des informations issues de données financières structurées et de documents métier.</p>
+            <ul class="ticks">
+              <li data-i18n="pr.finance.b1">Assistant RAG interrogeant la documentation financière en langage naturel, avec réponses contextualisées et sources.</li>
+              <li data-i18n="pr.finance.b2">Modélisation et exploitation des données sous Oracle Database, avec recherche vectorielle.</li>
+              <li data-i18n="pr.finance.b3">Développement d'API backend.</li>
+            </ul>
+            <ul class="stack mono" aria-label="Stack"><li>Java</li><li>Spring Boot</li><li>Python</li><li>Oracle Database</li><li>SQL</li><li>RAG</li><li>LLM</li><li>JUnit</li><li>Swagger</li><li>Docker</li></ul>
+            <footer class="project-foot">
+              <span class="project-ctx" data-i18n="pr.finance.ctx">Projet académique</span>
+              <span class="project-links"></span>
+            </footer>
+          </article>
+          <article class="project" data-reveal>
+            <header class="project-top">
+              <span class="project-num mono">04</span>
+              <span class="project-domain mono" data-i18n="pr.elearning.domain">Full-stack · Sécurité</span>
+              
+            </header>
+            <h3 data-i18n="pr.elearning.title">Plateforme E-Learning sécurisée</h3>
+            <p class="project-lead" data-i18n="pr.elearning.lead">Conception et développement d'une plateforme e-learning avec gestion multi-rôles, messagerie temps réel et reporting Power BI.</p>
+            <ul class="ticks">
+              <li data-i18n="pr.elearning.b1">Gestion multi-rôles et messagerie temps réel.</li>
+              <li data-i18n="pr.elearning.b2">Reporting Power BI.</li>
+              <li data-i18n="pr.elearning.b3">Sécurité avancée : 2FA et SSPR (Self-Service Password Reset).</li>
+            </ul>
+            <ul class="stack mono" aria-label="Stack"><li>Spring Boot</li><li>Spring Security</li><li>Angular</li><li>OAuth 2.0</li><li>JWT</li><li>Power BI</li></ul>
+            <footer class="project-foot">
+              <span class="project-ctx" data-i18n="pr.elearning.ctx">Projet académique</span>
+              <span class="project-links"></span>
+            </footer>
+          </article>
+          <article class="project" data-reveal>
+            <header class="project-top">
+              <span class="project-num mono">05</span>
+              <span class="project-domain mono" data-i18n="pr.cra.domain">Application métier</span>
+              
+            </header>
+            <h3 data-i18n="pr.cra.title">Plateforme de gestion des CRA</h3>
+            <p class="project-lead" data-i18n="pr.cra.lead">Application web de gestion des comptes rendus d'activité, avec deux espaces distincts : Admin et Collaborateur.</p>
+            <ul class="ticks">
+              <li data-i18n="pr.cra.b1">Admin : gestion des collaborateurs, missions et affectations, validation des CRA.</li>
+              <li data-i18n="pr.cra.b2">Collaborateur : saisie et soumission des CRA.</li>
+              <li data-i18n="pr.cra.b3">Authentification JWT et API documentée avec Swagger / OpenAPI.</li>
+            </ul>
+            <ul class="stack mono" aria-label="Stack"><li>Java 17</li><li>Spring Boot 3</li><li>Spring Security</li><li>Spring Data JPA</li><li>Angular 17</li><li>JWT</li></ul>
+            <footer class="project-foot">
+              
+              <span class="project-links"><a class="link-arrow" href="https://drive.google.com/file/d/1xv2CEI4bIS7GuGsE07_w1e25adURifAD/view?usp=sharing" target="_blank" rel="noopener"><span data-i18n="pr.lnk.video">Démo vidéo</span> ↗</a><a class="link-arrow" href="https://github.com/majda2001/CRA_Project" target="_blank" rel="noopener"><span data-i18n="pr.lnk.code">Code source</span> ↗</a></span>
+            </footer>
+          </article>
+          <article class="project" data-reveal>
+            <header class="project-top">
+              <span class="project-num mono">06</span>
+              <span class="project-domain mono" data-i18n="pr.databridge.domain">Données · XML</span>
+              <span class="project-status is-live"><i class="live"></i><span data-i18n="pr.live">En ligne</span></span>
+            </header>
+            <h3 data-i18n="pr.databridge.title">DataBridge</h3>
+            <p class="project-lead" data-i18n="pr.databridge.lead">Application web de validation et de conversion de fichiers XML.</p>
+            <ul class="ticks">
+              <li data-i18n="pr.databridge.b1">Validation XML contre une DTD ou un schéma XSD.</li>
+              <li data-i18n="pr.databridge.b2">Conversion XML → JSON.</li>
+              <li data-i18n="pr.databridge.b3">Conversion DTD → XSD.</li>
+            </ul>
+            <ul class="stack mono" aria-label="Stack"><li>Python</li><li>Django</li><li>Poetry</li><li>Vercel</li></ul>
+            <footer class="project-foot">
+              
+              <span class="project-links"><a class="link-arrow" href="https://data-bridge-sigma.vercel.app/" target="_blank" rel="noopener"><span data-i18n="pr.lnk.live">Démo en ligne</span> ↗</a><a class="link-arrow" href="https://github.com/majda2001/DataBridge" target="_blank" rel="noopener"><span data-i18n="pr.lnk.code">Code source</span> ↗</a></span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="kicker mono">03 — <span data-i18n="nav.skills">Compétences</span></span>
+          <h2 data-i18n="sk.title">Expertise technique</h2>
+        </header>
+        <div class="skills">
+          <div class="skill" data-reveal>
+            <div class="skill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></div>
+            <h3>Backend</h3>
+            <ul class="stack mono"><li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>Python</li><li>FastAPI</li><li>Flask</li><li>Laravel</li><li>REST</li><li>Design Patterns</li></ul>
+          </div>
+          <div class="skill" data-reveal>
+            <div class="skill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></div>
+            <h3 data-i18n="sk.ai">IA, LLM &amp; agents</h3>
+            <ul class="stack mono"><li>RAG</li><li data-i18n="sk.vector">Recherche vectorielle</li><li>Spring AI</li><li>Agno</li><li>CrewAI</li><li>Ollama</li><li>Gemini API</li><li>Groq API</li></ul>
+          </div>
+          <div class="skill" data-reveal>
+            <div class="skill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+            <h3>Cloud &amp; DevOps</h3>
+            <ul class="stack mono"><li>Docker</li><li>Kubernetes</li><li>GitHub Actions</li><li>Terraform</li><li>Azure</li><li>OCI</li></ul>
+          </div>
+          <div class="skill" data-reveal>
+            <div class="skill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3 data-i18n="sk.sec">Sécurité</h3>
+            <ul class="stack mono"><li>Spring Security</li><li>OAuth 2.0</li><li>JWT</li><li>2FA</li><li>Microsoft Entra ID</li><li>IAM</li></ul>
+          </div>
+          <div class="skill" data-reveal>
+            <div class="skill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></div>
+            <h3 data-i18n="sk.db">Bases de données</h3>
+            <ul class="stack mono"><li>SQL</li><li>Oracle Database</li><li>MySQL</li><li>SQL Server</li><li>Redis</li><li>Power BI</li></ul>
+          </div>
+          <div class="skill" data-reveal>
+            <div class="skill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg></div>
+            <h3 data-i18n="sk.front">Frontend &amp; qualité</h3>
+            <ul class="stack mono"><li>Angular</li><li>React</li><li>Next.js</li><li>Vue.js</li><li>Nuxt.js</li><li>TypeScript</li><li>Tailwind</li><li>JUnit</li><li>SOLID</li><li>UML</li><li>Scrum</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="section" id="certifications">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="kicker mono">04 — Certifications</span>
+          <h2 data-i18n="ce.title">Certifications &amp; formation</h2>
+        </header>
+        <div class="certs">
+          <div class="cert" data-reveal>
+            <span class="cert-issuer mono">ORACLE</span>
+            <h3>Oracle Certified Professional — Java SE 17 Developer</h3>
+            <p class="mono muted">2026 — 2028</p>
+          </div>
+          <div class="cert" data-reveal>
+            <span class="cert-issuer mono">ORACLE CLOUD</span>
+            <h3>OCI Certified AI Foundations Associate</h3>
+            <p class="mono muted">2026 — 2028</p>
+          </div>
+          <div class="cert" data-reveal>
+            <span class="cert-issuer mono">ORACLE CLOUD</span>
+            <h3>OCI 2025 Certified DevOps Professional</h3>
+            <p class="mono muted">2025 — 2027</p>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+          <ol class="edu" data-reveal>
+            <li>
+              <span class="mono muted">2024 — 2026</span>
+              <div><h3 data-i18n="ed.1t">Diplôme d'Ingénieur d'État — Informatique</h3><p data-i18n="ed.1d">École Nationale Supérieure des Mines de Rabat</p></div>
+            </li>
+            <li>
+              <span class="mono muted">2022 — 2024</span>
+              <div><h3 data-i18n="ed.2t">Master — Ingénierie des Systèmes d'Information</h3><p data-i18n="ed.2d">Faculté des Sciences Semlalia</p></div>
+            </li>
+            <li>
+              <span class="mono muted">2021 — 2022</span>
+              <div><h3 data-i18n="ed.3t">Licence — Informatique</h3><p data-i18n="ed.3d">Faculté des Sciences et Techniques</p></div>
+            </li>
+          </ol>
+          <div class="langs" data-reveal>
+            <h4 class="mono muted" data-i18n="lg.title">Langues</h4>
+            <div class="lang"><span data-i18n="lg.ar">Arabe</span><span class="bar"><i style="--w:100%"></i></span><em class="mono muted" data-i18n="lg.native">Natif</em></div>
+            <div class="lang"><span data-i18n="lg.fr">Français</span><span class="bar"><i style="--w:85%"></i></span><em class="mono muted" data-i18n="lg.fluent">Courant</em></div>
+            <div class="lang"><span data-i18n="lg.en">Anglais</span><span class="bar"><i style="--w:60%"></i></span><em class="mono muted" data-i18n="lg.inter">Intermédiaire</em></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact-card" data-reveal>
+          <span class="kicker mono">05 — Contact</span>
+          <h2 data-i18n="ct.title">Construisons quelque chose de solide.</h2>
+          <p class="section-sub" data-i18n="ct.sub">Ouverte aux postes d'ingénieure logiciel full-stack et IA.</p>
+          <div class="email-row">
+            <a class="email mono" href="mailto:ablaoui.majda2001@gmail.com">ablaoui.majda2001@gmail.com</a>
+            <button class="btn btn-sm" id="copy-email" type="button" data-email="ablaoui.majda2001@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h9"/></svg><span data-i18n="ct.copy">Copier</span>
+            </button>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/majda-ablaoui" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn" href="https://github.com/majda2001" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Majda Ablaoui · <span data-i18n="ft.made">Conçu et développé par moi-même.</span></span>
+      <a href="#top" class="link-arrow"><span data-i18n="ft.top">Retour en haut</span> ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="main.js"></script>
+</body>
+</html>
