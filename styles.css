@@ -307,6 +307,34 @@ html[lang="en"] .seg-pill { transform: translateX(36px); }
 .js [data-reveal].in { opacity: 1; transform: none; }
 
 /* =========================================================
+   About
+   ========================================================= */
+.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: start; }
+.about-text p { font-size: 1.12rem; color: var(--text-2); margin-bottom: 18px; max-width: 58ch; }
+.about-text .link-arrow { margin-top: 6px; }
+.focus { display: grid; gap: 12px; }
+.focus li {
+  display: flex; gap: 16px; padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); transition: border-color .3s, transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.focus li:hover { border-color: var(--line-2); transform: translateX(4px); box-shadow: var(--shadow); }
+.focus-ico {
+  display: grid; place-items: center; flex: none; width: 40px; height: 40px; border-radius: 10px;
+  background: var(--accent-soft); color: var(--accent); transition: transform .5s var(--ease);
+}
+.focus li:hover .focus-ico { transform: rotate(-8deg) scale(1.06); }
+.focus h3 { font-size: 1rem; margin-bottom: 4px; }
+.focus p { font-size: 14.5px; color: var(--muted); }
+.section-more { margin-top: 32px; }
+
+/* Gentle heading reveal: the title slides up from behind a mask */
+.js .section-head h2, .js .contact-card h2 {
+  clip-path: inset(0 0 100% 0); transform: translateY(40%);
+  transition: clip-path 1s var(--ease) .1s, transform 1s var(--ease) .1s;
+}
+.js .in .section-head h2, .js .section-head.in h2, .js .contact-card.in h2 { clip-path: inset(-10% -5% -20% -5%); transform: none; }
+
+/* =========================================================
    Timeline
    ========================================================= */
 .timeline { position: relative; padding-left: 0; }
@@ -476,7 +504,7 @@ html[lang="en"] .seg-pill { transform: translateX(36px); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
-  .js [data-anim], .js [data-reveal], .code-card .ln, .js .project .ticks li { opacity: 1 !important; transform: none !important; }
+  .js [data-anim], .js [data-reveal], .code-card .ln, .js .project .ticks li, .js .section-head h2, .js .contact-card h2 { opacity: 1 !important; transform: none !important; clip-path: none !important; }
   .spotlight { display: none; }
 }
 
@@ -484,6 +512,7 @@ html[lang="en"] .seg-pill { transform: translateX(36px); }
    Responsive
    ========================================================= */
 @media (max-width: 980px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero-inner { grid-template-columns: 1fr; }
   .code-card { max-width: 520px; }
   .skills, .certs { grid-template-columns: 1fr 1fr; }

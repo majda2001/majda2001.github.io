@@ -10,6 +10,7 @@
   // =========================================================
   var EN = {
     "skip": "Skip to content",
+    "nav.about": "About",
     "nav.exp": "Experience",
     "nav.projects": "Projects",
     "nav.skills": "Skills",
@@ -23,7 +24,7 @@
     "hero.w2": "AI agents",
     "hero.w3": "secure APIs",
     "hero.w4": "microservices",
-    "hero.lead": "Software engineer specialized in software development, with strong skills in Java / Spring Boot, REST APIs and relational databases. Experienced in designing secure and maintainable applications, with a focus on code quality and sound architecture practices.",
+    "hero.lead": "Full-Stack &amp; AI — Java / Spring Boot, Python, Angular and React. I design secure, maintainable applications and integrate LLMs and AI agents into them.",
     "hero.cta1": "View my work",
     "hero.cta2": "Download résumé",
     "code.role": "\"Software Engineer\"",
@@ -33,6 +34,18 @@
     "st.3": "Projects delivered",
     "st.4": "Engineering degree",
 
+    "ab.title": "Software engineer, Full-Stack &amp; AI.",
+    "ab.p1": "Software engineer specialized in software development, with strong skills in <strong>Java / Spring Boot</strong>, <strong>REST APIs</strong> and relational databases.",
+    "ab.p2": "Experienced in designing <strong>secure and maintainable</strong> applications, with a focus on code quality and sound architecture practices.",
+    "ab.more": "See my experience",
+    "ab.f1t": "Backend &amp; secure APIs",
+    "ab.f1d": "Java, Spring Boot, REST APIs, Spring Security, OAuth 2.0, JWT.",
+    "ab.f2t": "Applied AI",
+    "ab.f2d": "LLM and AI agent integration, RAG and vector search.",
+    "ab.f3t": "Full-Stack &amp; DevOps",
+    "ab.f3d": "Angular, React, Next.js, Docker, CI/CD with GitHub Actions.",
+    "exp.cv": "View full résumé",
+    "pj.more": "See all my repositories on GitHub",
     "exp.title": "Professional experience",
     "tag.intern": "Internship",
     "e1.role": "Full-Stack &amp; AI Engineer",
@@ -149,7 +162,7 @@
     });
     root.lang = l;
     document.title = UI[l].title;
-    document.getElementById("cv-link").href = UI[l].cv;
+    document.querySelectorAll("#cv-link, .cv-link").forEach(function (a) { a.href = UI[l].cv; });
     document.querySelectorAll(".seg button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.lang === l));
     });

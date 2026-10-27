@@ -38,6 +38,7 @@
         <span class="brand-name">Majda Ablaoui</span>
       </a>
       <nav class="nav" id="nav" aria-label="Navigation">
+        <a href="#about" data-i18n="nav.about">À propos</a>
         <a href="#experience" data-i18n="nav.exp">Expérience</a>
         <a href="#projects" data-i18n="nav.projects">Projets</a>
         <a href="#skills" data-i18n="nav.skills">Compétences</a>
@@ -78,7 +79,7 @@
               <span class="rot-word" data-i18n="hero.w4">microservices</span>
             </span>
           </h1>
-          <p class="lead" data-anim="3" data-i18n="hero.lead">Ingénieure informatique spécialisée en développement logiciel, avec de solides compétences en Java / Spring Boot, API REST et bases de données relationnelles. Expérience dans la conception d'applications sécurisées et maintenables, avec une attention portée à la qualité du code et aux bonnes pratiques d'architecture.</p>
+          <p class="lead" data-anim="3" data-i18n="hero.lead">Full-Stack &amp; IA — Java / Spring Boot, Python, Angular et React. Je conçois des applications sécurisées et maintenables, et j'y intègre des LLM et des agents IA.</p>
           <div class="cta-row" data-anim="4">
             <a class="btn btn-primary" href="#projects"><span data-i18n="hero.cta1">Voir mes projets</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <a class="btn" id="cv-link" href="assets/CV_Majda_Ablaoui_FR.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="hero.cta2">Télécharger le CV</span></a>
@@ -117,11 +118,42 @@
       </div>
     </section>
 
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <header class="section-head" data-reveal>
+          <span class="kicker mono">01 — <span data-i18n="nav.about">À propos</span></span>
+          <h2 data-i18n="ab.title">Ingénieure logiciel, Full-Stack &amp; IA.</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p data-i18n="ab.p1">Ingénieure informatique spécialisée en développement logiciel, avec de solides compétences en <strong>Java / Spring Boot</strong>, <strong>API REST</strong> et bases de données relationnelles.</p>
+            <p data-i18n="ab.p2">Expérience dans la conception d'applications <strong>sécurisées et maintenables</strong>, avec une attention portée à la qualité du code et aux bonnes pratiques d'architecture.</p>
+            <a class="link-arrow" href="#experience"><span data-i18n="ab.more">Voir mon parcours</span> ↓</a>
+          </div>
+          <ul class="focus">
+            <li data-reveal>
+              <span class="focus-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <div><h3 data-i18n="ab.f1t">Backend &amp; API sécurisées</h3><p data-i18n="ab.f1d">Java, Spring Boot, API REST, Spring Security, OAuth 2.0, JWT.</p></div>
+            </li>
+            <li data-reveal>
+              <span class="focus-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span>
+              <div><h3 data-i18n="ab.f2t">IA appliquée</h3><p data-i18n="ab.f2d">Intégration de LLM et d'agents IA, RAG et recherche vectorielle.</p></div>
+            </li>
+            <li data-reveal>
+              <span class="focus-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg></span>
+              <div><h3 data-i18n="ab.f3t">Full-Stack &amp; DevOps</h3><p data-i18n="ab.f3d">Angular, React, Next.js, Docker, CI/CD GitHub Actions.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= EXPERIENCE ================= -->
     <section class="section" id="experience">
       <div class="wrap">
         <header class="section-head" data-reveal>
-          <span class="kicker mono">01 — <span data-i18n="nav.exp">Expérience</span></span>
+          <span class="kicker mono">02 — <span data-i18n="nav.exp">Expérience</span></span>
           <h2 data-i18n="exp.title">Parcours professionnel</h2>
         </header>
 
@@ -200,6 +232,9 @@
             </div>
           </li>
         </ol>
+        <div class="section-more" data-reveal>
+          <a class="link-arrow cv-link" href="assets/CV_Majda_Ablaoui_FR.pdf" target="_blank" rel="noopener"><span data-i18n="exp.cv">Voir le CV complet</span> ↗</a>
+        </div>
       </div>
     </section>
 
@@ -207,7 +242,7 @@
     <section class="section" id="projects">
       <div class="wrap">
         <header class="section-head" data-reveal>
-          <span class="kicker mono">02 — <span data-i18n="nav.projects">Projets</span></span>
+          <span class="kicker mono">03 — <span data-i18n="nav.projects">Projets</span></span>
           <h2 data-i18n="pj.title">Projets sélectionnés</h2>
           <p class="section-sub" data-i18n="pj.sub">Une sélection de réalisations : contexte, contributions et technologies.</p>
         </header>
@@ -328,6 +363,9 @@
             </footer>
           </article>
         </div>
+        <div class="section-more" data-reveal>
+          <a class="link-arrow" href="https://github.com/majda2001" target="_blank" rel="noopener"><span data-i18n="pj.more">Voir tous mes dépôts sur GitHub</span> ↗</a>
+        </div>
       </div>
     </section>
 
@@ -335,7 +373,7 @@
     <section class="section" id="skills">
       <div class="wrap">
         <header class="section-head" data-reveal>
-          <span class="kicker mono">03 — <span data-i18n="nav.skills">Compétences</span></span>
+          <span class="kicker mono">04 — <span data-i18n="nav.skills">Compétences</span></span>
           <h2 data-i18n="sk.title">Expertise technique</h2>
         </header>
         <div class="skills">
@@ -377,7 +415,7 @@
     <section class="section" id="certifications">
       <div class="wrap">
         <header class="section-head" data-reveal>
-          <span class="kicker mono">04 — Certifications</span>
+          <span class="kicker mono">05 — Certifications</span>
           <h2 data-i18n="ce.title">Certifications &amp; formation</h2>
         </header>
         <div class="certs">
@@ -427,7 +465,7 @@
     <section class="section" id="contact">
       <div class="wrap">
         <div class="contact-card" data-reveal>
-          <span class="kicker mono">05 — Contact</span>
+          <span class="kicker mono">06 — Contact</span>
           <h2 data-i18n="ct.title">Construisons quelque chose de solide.</h2>
           <p class="section-sub" data-i18n="ct.sub">Ouverte aux postes d'ingénieure logiciel full-stack et IA.</p>
           <div class="email-row">
