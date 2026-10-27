@@ -106,13 +106,15 @@ main, .site-footer { position: relative; z-index: 1; }
 }
 .header-inner { display: flex; align-items: center; gap: 24px; height: 68px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -.01em; }
+/* Sober monogram: thin outline in the text colour, no gradient */
 .brand-mark {
-  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;
-  font: 600 12px var(--mono); box-shadow: 0 6px 16px -6px var(--accent);
-  transition: transform .5s var(--ease);
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px;
+  border: 1.5px solid currentColor; color: var(--text); background: transparent;
+  font: 600 12px/1 var(--sans); letter-spacing: .06em;
+  transition: background-color .3s var(--ease), color .3s var(--ease);
 }
-.brand:hover .brand-mark { transform: rotate(-8deg) scale(1.06); }
+.brand-name { transition: color .3s; }
+.brand:hover .brand-mark { background: var(--text); color: var(--bg); }
 .nav { display: flex; gap: 4px; margin-left: auto; font-size: 14px; }
 .nav a { position: relative; padding: 8px 12px; border-radius: 8px; color: var(--muted); transition: color .2s, background-color .2s; }
 .nav a:hover { color: var(--text); background: var(--bg-2); }
