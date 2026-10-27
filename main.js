@@ -144,7 +144,6 @@
     "ct.title": "Let's build something solid.",
     "ct.sub": "Open to full-stack and AI software engineering roles.",
     "ct.copy": "Copy",
-    "ft.made": "Designed and built by me.",
     "ft.top": "Back to top"
   };
   var UI = {
