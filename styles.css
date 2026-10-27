@@ -427,8 +427,9 @@ html[lang="en"] .seg-pill { transform: translateX(36px); }
 /* =========================================================
    Skills
    ========================================================= */
-.skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.skill { padding: 28px; }
+.skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.skill { display: flex; flex-direction: column; }
+.skill { padding: 24px; }
 .skill-ico {
   display: grid; place-items: center; width: 42px; height: 42px; border-radius: 11px; margin-bottom: 18px;
   background: var(--accent-soft); color: var(--accent); transition: transform .5s var(--ease);
